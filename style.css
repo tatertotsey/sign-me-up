@@ -1,0 +1,91 @@
+@font-face {
+  font-family: odin;
+  src: url("/res/Norse-Bold.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+}
+
+.bg-container {
+  background-image: url("/res/unsplash.jpg");
+  background-position: center;
+  background-size: contain;
+  width: 40vw;
+  height: 100vh;
+}
+
+.logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(93, 90, 29, 0.261);
+  top: 40vh;
+}
+
+.icon {
+  width: 10vw;
+}
+
+h1 {
+  font-size: 3rem;
+  color: white;
+  font-family: odin, roboto, arial, helvetica;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 166, 0, 0.194);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 60vw;
+}
+
+.text-wrapper {
+  font-size: 1.3rem;
+  width: 90%;
+  padding-left: 3rem;
+  line-height: 2rem;
+}
+
+.text2 {
+  padding: 2rem 0 2rem;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  width: 60vw;
+  padding: 3rem 0 3rem;
+}
+
+.form {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  padding-left: 3rem;
+}
+
+label {
+  position: relative;
+  width: 15rem;
+  margin-bottom: 20px;
+}
+
+input {
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 1px solid rgba(228, 152, 37, 0.51);
+  font-family: inherit;
+  font-size: 0.9rem;
+}
