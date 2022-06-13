@@ -147,3 +147,25 @@ a {
   bottom: 0;
   left: 25%;
 }
+
+.footer-container {
+  position: relative;
+}
+
+.footer {
+  font-family: Verdana, Arial, Helvetica, sans-;
+  position: absolute;
+  bottom: 0;
+  left: 65vw;
+  font-size: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  color: rgba(0, 0, 0, 0.668);
+}
+
+#git {
+  height: 22px;
+  width: auto;
+  opacity: 0.8;
+  padding-bottom: 2px;
+}
