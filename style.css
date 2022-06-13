@@ -1,6 +1,6 @@
 @font-face {
   font-family: odin;
-  src: url("/res/Norse-Bold.otf");
+  src: url("res/Norse-Bold.otf");
 }
 
 * {
@@ -15,7 +15,7 @@
 
 .bg-container {
   position: relative;
-  background-image: url("/res/unsplash.jpg");
+  background-image: url("res/unsplash.jpg");
   background-position: center;
   background-size: contain;
   width: 40vw;
