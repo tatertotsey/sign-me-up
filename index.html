@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-me-Up!</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -16,9 +17,15 @@
                 <img class="icon" src="res/odin-lined.png" alt="odin link" />
                 <h1>Odin</h1>
             </div>
+
+            <div class="imageowner">
+            <p>Photo by <a href="https://unsplash.com/@timmossholder">Tim Mossholder</a>
+            on <a href="https://unsplash.com/">Unsplash</a></p></div>
+            
         </div>
 
         <main class="form-group">
+
             <div class="text-wrapper">
                 <p class="text">
                     This is not a real online service! You know you need something like
@@ -31,29 +38,55 @@
 
 
 
-                <div class="form-wrapper">
+            <div class="form-wrapper">
+                <p class="text-wrapper">Let's do this!</p>
 
-                    <p class="text-wrapper">Let's do this!</p>
 
-                    <form class="form" method="post" action="server">
-                       
-                                <label for="firstName">First Name</label>
-                                <input type="text" id="firstName" name="firstName" placeholder="Manda">
-                                <label for="lastName">Last Name</label>
-                                <input type="text" id="lastName" name="lastName" placeholder="Lorian">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email">
-                                <label for="phone_number">Phone Number</label>
-                                <input type="tel" id="phone_number" name="phone_number">
-                                <label for="password">Password</label>
-                                <input type="password" id="password" name="password"> <!--  //TODO regex here -->
-                                <label for="confirm_password">Confirm Password</label>
-                                <input type="password" id="confirm_password" name="confirm_password">
-                    </form>
-                </div>
+                <form class="form" method="post" action="#">
+                    <div>
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Manda">
+                    </div>
 
-            <div>
-                <button class="submit-button" type="submit" name="create_account">Create Account
+                    <div>
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Lorian">
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div>
+                        <label for="phone_number">Phone Number</label>
+                        <input type="tel" id="phone_number" name="phone_number">
+                    </div>
+                    <div>
+
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" minlength="8" maxlength="16"
+                            pattern="?=.*?[A-Z]" required>
+                    </div>
+
+                    <div>
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" id="confirm_password" name="confirm_password" minlength="8"
+                            maxlength="16" required>
+                        <p id="error"></p>
+                    </div>
+
+                    <div class="submit">
+                        <button type="submit" class="submit-button" name="create_account">Create Account</button>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="account-text">
+                <p>Already have an account?
+                    <a href=""><strong>Log in</strong></a>
+                </p>
             </div>
 
         </main>
