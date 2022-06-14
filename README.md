@@ -1,2 +1,6 @@
 # Sign-Me-Up
- This is a dummy 'Sign-Up Form' project using HTML and CSS. For password check JavaScript is used.  
+
+This project is part of 'The Odin Project'.
+
+- It is a dummy 'Sign-Up Form' using HTML and CSS. 
+- The basic password check is made with JavaScript.
